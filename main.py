@@ -1,5 +1,4 @@
 from turtle import Screen
-from time import sleep
 from turtlehelena import Helenaturtle, Helenawall, Helenatext
 
 NUMBER_OF_TURTLE = 9

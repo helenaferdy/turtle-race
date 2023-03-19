@@ -1,6 +1,8 @@
 from turtle import Turtle
 import random
 
+RANDOMINT = 10
+
 class Helenaturtle:
     def __init__(self, shape, color, x, y, number):
         self.shape = shape
@@ -25,8 +27,8 @@ class Helenaturtle:
     def move_turtle(self):
         self.xcors = []
         for t in self.turtles:
-            if t.xcor() <380:
-                t.forward(random.randint(0,30))
+            if t.xcor() < 380:
+                t.forward(random.randint(0,RANDOMINT))
             else:
                 return t.fillcolor()
             
