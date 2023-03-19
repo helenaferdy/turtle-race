@@ -25,14 +25,11 @@ class Helenaturtle:
             self.turtles.append(t)
 
     def move_turtle(self):
-        self.xcors = []
         for t in self.turtles:
             if t.xcor() < 380:
                 t.forward(random.randint(0,RANDOMINT))
             else:
                 return t.fillcolor()
-            
-
     
 class Helenawall:
     def __init__(self):
