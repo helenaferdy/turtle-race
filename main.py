@@ -4,17 +4,15 @@ from turtlehelena import Helenaturtle, Helenawall, Helenatext
 NUMBER_OF_TURTLE = 9
 X_POS = -400
 Y_POS = [-300, -225, -150, -75, 0, 75, 150, 225, 300]
-COLORS = ["red", "blue", "green", "purple", "brown", "gray", "black", "yellow", "pink",]
-
+COLORS = ["red", "blue", "green", "purple", "brown", "gray", "white", "yellow", "pink",]
 
 game_is_on = True
 screen = Screen()
+screen.bgcolor("black")
 
 thewall = Helenawall()
 theturtle = Helenaturtle("turtle", COLORS, X_POS, Y_POS, NUMBER_OF_TURTLE)
-
-text = Screen()
-guess = text.textinput("Guess the winner", "Guess turtle color to win the race:")
+guess = screen.textinput("Guess the winner", "Guess turtle color to win the race:")
 
 message = ""
 while game_is_on:

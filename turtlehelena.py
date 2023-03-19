@@ -39,7 +39,7 @@ class Helenawall:
         self.w = Turtle()
         self.w.penup()
         self.w.shape("square")
-        self.w.color("black")
+        self.w.color("cyan")
         self.w.shapesize(400,1)
         self.w.goto(405,0)
 
@@ -48,6 +48,8 @@ class Helenatext:
         self.message = message
 
         self.t = Turtle()
+        self.t.fillcolor("white")
+        self.t.color("white")
         self.t.hideturtle()
         self.t.penup()
         self.t.goto(-100, 0)
